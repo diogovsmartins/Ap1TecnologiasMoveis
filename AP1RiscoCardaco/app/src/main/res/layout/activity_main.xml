@@ -22,7 +22,7 @@
     <EditText
         android:id="@+id/ageInput"
         android:layout_width="246dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginTop="84dp"
         android:hint="@string/typeYourAgeHint"
         android:inputType="number"
@@ -46,6 +46,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -94,5 +95,15 @@
             android:onClick="onRadioButtonClicked"
             android:text="@string/radioButtonOption2" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/genderQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the gender that most fits you"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
