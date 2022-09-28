@@ -13,11 +13,12 @@
         android:layout_marginBottom="32dp"
         android:contentDescription="@string/ageQuestionDescription"
         android:text="@string/ageQuestionText"
-        android:textSize="24sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/ageInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/ageInput"
@@ -49,8 +50,11 @@
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/nextPageButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ageInput">
 
         <RadioButton
@@ -61,38 +65,33 @@
             android:text="@string/radioButtonOption1" />
 
         <RadioButton
-            android:id="@+id/radio_ninjas"
+            android:id="@+id/id1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/radioButtonOption2" />
 
         <RadioButton
-            android:id="@+id/radio_ninjas"
+            android:id="@+id/id2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="Feminino c/ mais de 50 anos" />
 
         <RadioButton
-            android:id="@+id/radio_ninjas"
+            android:id="@+id/id3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/radioButtonOption2" />
 
         <RadioButton
-            android:id="@+id/radio_ninjas"
+            android:id="@+id/id4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/radioButtonOption2" />
 
         <RadioButton
-            android:id="@+id/radio_ninjas"
+            android:id="@+id/id5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/radioButtonOption2" />
     </RadioGroup>
 
@@ -101,6 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select the gender that most fits you"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
